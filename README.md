@@ -9,11 +9,11 @@ Verify that you are running at least node v10.18.0 and npm 4.0.0 by running node
 
 We recommend nvm for managing multiple versions of node and npm.
 ## Set-up
-Clone this repo into new project folder (e.g., my-proj).
-*git clone https://github.com/Arellasubbarayudu/SubbuAngularTask.git
-*cd my-proj
-*npm install
-*npm run start or ng serve
+* clone this repo into new project folder (e.g., my-proj).
+* git clone https://github.com/Arellasubbarayudu/SubbuAngularTask.git
+* cd my-proj
+* npm install
+* npm run start or ng serve
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
