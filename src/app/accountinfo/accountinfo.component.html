@@ -1,0 +1,31 @@
+<!-- main app container -->
+<div class="card m-3">
+    <h5 class="card-header">Saving Account Details</h5>
+    <div class="card-body">
+        <form [formGroup]="userAccountInfoForm" #control="ngForm">
+            <div class="form-row">
+
+                <div class="form-group col-5">
+                    <label>IBAN Account Number</label>
+                    <input type="text" formControlName="accountNumber" class="form-control" pattern=""/>
+                    <div *ngIf="f.accountNumber.invalid && (f.accountNumber.dirty || f.accountNumber.touched)">
+                        <div class="errMsg" *ngIf="f.accountNumber.errors.required">Account number is required</div>
+                    </div>
+                </div>
+                <div class="form-group col-5">
+                    <label>Amount</label>
+                    <input type="textbox" formControlName="amount" placeholder="XX.XXX" class="form-control" appDecimalNumber/>
+                    <div *ngIf="f.amount.invalid && (f.amount.dirty || f.amount.touched)" class="invalid-feedback">
+                        <div class="errMsg" *ngIf="f.amount.errors.required">Amount is required</div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="text-center">
+                <button class="btn btn-primary mr-1" [disabled]="!control.form.valid" (click)="navigateToThirdScreen()">next</button>
+                <button class="btn btn-secondary" type="reset" (click)="onReset()">Back</button>
+            </div>
+        </form>
+    </div>
+</div>
+
