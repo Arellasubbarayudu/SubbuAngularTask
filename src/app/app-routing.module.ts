@@ -6,7 +6,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { UserdataComponent } from './userdata/userdata.component';
 const routes: Routes = [
   { path: '', component: UserinfoComponent },
-  { path: 'userinfo', component: UserinfoComponent },
   {path:'accountinfo', component:AccountinfoComponent},
   {
     path:'userdata' , component:UserdataComponent

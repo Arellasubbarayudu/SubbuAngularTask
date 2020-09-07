@@ -45,7 +45,7 @@ debugger;
     onReset() {
         this.submitted = false;
         this.userAccountInfoForm.reset();
-        this.router.navigate(['/userinfo']);
+        this.router.navigate(['/']);
     }
 
     navigateToThirdScreen(): void{
